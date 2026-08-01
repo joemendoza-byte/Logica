@@ -1,0 +1,20 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int main() {
+    vector<int> A = {10, 20, 30, 40, 50};
+    int buscar = 30;
+    int posicion = -1;
+    for (int i = 0; i < A.size(); i++) {
+        if (A[i] == buscar) {
+            posicion = i;
+            break;
+        }
+    }
+    if (posicion != -1) {
+        cout << "Buscar: " << buscar << ", Posicion: " << posicion << endl;
+    } else {
+        cout << "El numero " << buscar << " no se encuentra en el array." << endl;
+    }
+    return 0;
+}
