@@ -1,0 +1,15 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int main() {
+    vector<int> A = {10, 20, 30, 40, 50};
+    int mayor = A[0];
+
+    for (int i = 1; i < A.size(); i++) {
+        if (A[i] > mayor) {
+            mayor = A[i];
+        }
+    }
+    cout << "El mayor valor es: " << mayor;
+    return 0;
+}
