@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int mayor(int a, int b) {
+    if (a > b) {
+        return a;
+    } else {
+        return b;
+    }
+}
+int main() {
+    int a = 45;
+    int b = 30;
+    cout << "El mayor de " << a << " y " << b << " es: " << mayor(a, b) << endl;
+    return 0;
+}
