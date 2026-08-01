@@ -1,0 +1,22 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<int> A = {10, 20, 30, 40, 50};
+    int menor = A[0];
+    int mayor = A[0];
+    for (int i = 1; i < A.size(); i++) {
+        if (A[i] < menor) {
+            menor = A[i];
+        }
+        if (A[i] > mayor) {
+            mayor = A[i];
+        }
+    }
+    int suma = menor + mayor;
+    cout << "El menor valor es: " << menor << endl;
+    cout << "El mayor valor es: " << mayor << endl;
+    cout << "La suma de ambos es: " << suma;
+    return 0;
+}
