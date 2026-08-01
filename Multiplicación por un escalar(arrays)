@@ -1,0 +1,24 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<int> A = {10, 20, 30, 40};
+    int escalar = 2;
+    vector<int> Salida;
+    
+    for (int i = 0; i < A.size(); i++) {
+        Salida.push_back(A[i] * escalar);
+    }
+    
+    cout << "Salida: {";
+    for (int i = 0; i < Salida.size(); i++) {
+        cout << Salida[i];
+        if (i < Salida.size() - 1) {
+            cout << ", ";
+        }
+    }
+    cout << "}";
+    
+    return 0;
+}
